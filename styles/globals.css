@@ -103,7 +103,7 @@ button {
   background-color: #DA1212;
 }
 .subheader-logo{
-   padding: 0 42%;
+   padding: 0 25%;
 }
 .mobilesubheaderh1{
   font-size: 1.5rem;
@@ -509,6 +509,7 @@ backdrop-filter: blur( 12.5px );
   color: #EEEEEE;
   font-size: 1.5rem;
   padding: 1.5vh;
+  text-decoration: none;
 }
 
 .header ul {
