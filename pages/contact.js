@@ -25,14 +25,17 @@ function ContactPage() {
         <div>
             {isMobile &&
                 <Fragment>
-            <Head>
-                <title>Contact Me</title>
-                <meta name='description' content="the way you contact us."  />
-            </Head>
-            <div className="ypad-mobile">
-                    <Subheader title={"Contact"} slogan={"Your Cosmic Gem is just a click away"} tagline={"Connect. Plan. Manifest."} />
-                    <ContactForm />
+                <div className="pt-5">
+                    <Head>
+                        <title>Contact Me</title>
+                        <meta name='description' content="the way you contact us."  />
+                    </Head>
+                    <div className="ypad-mobile">
+                        <Subheader title={"Contact"} slogan={"Your Cosmic Gem is just a click away"} tagline={"Connect. Plan. Manifest."} />
+                        <ContactForm />
+                    </div>
                 </div>
+            
         </Fragment>
             }
 

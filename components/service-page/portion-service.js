@@ -4,7 +4,7 @@ import styles from './service-page.module.css';
 function PortionService(props) {
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 424px)'
+        query: '(max-width: 700px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'

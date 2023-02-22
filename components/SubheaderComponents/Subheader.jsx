@@ -23,7 +23,7 @@ const Subheader = (props) => {
 
         <div className=' '>
         {isMobile && 
-        <div className="py-5 px-4">
+        <div className="pt-5 px-4 pb-2">
             <div className="subheader-logo bi mb-3">
                 <Image className="img-fluid " height={0} width={600} src='/images/site/cosmic-logo.png' alt="logo"  />
             </div>

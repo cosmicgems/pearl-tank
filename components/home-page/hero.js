@@ -1,10 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { Button } from 'react-bootstrap';
-import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/esm/Col';
-// import Row from 'react-bootstrap/esm/Row';
-import classes from './hero.module.css'
 import { useMediaQuery } from 'react-responsive';
 
 function Hero(){
@@ -26,22 +22,20 @@ function Hero(){
         <div>
             {isMobile &&
             <div className=''>
-            <section className={classes.heroMobile}>
-        <h1 className={classes.heroH1Mobile}>
+            <section className='heroMobile '>
+        <h1 className="heroH1Mobile py-3">
             COSMIC GEMS REALITY
         </h1>
-        <div className={classes.imageMobile}>
+        <div className='imageMobile'>
             <Image src="/images/site/cosmic-logo.png" alt="" width={300} height={200} />
         
         </div>
         <h2>
             Digital Business & Branding Gems That Inspire
         </h2>
-        <div className=" d-grid  py-4  ">
+        <div className=" d-grid  py-4 px-2 ">
             
-                <Button className='mb-3 btn-lg button-mobile' variant='' ><Link className={classes.link} href='/web-development-consultation'>Web Development Insight</Link></Button>
-
-                <Button className='mb-3 btn-lg button-mobile' variant=''  ><Link className={classes.link} href='/web-development-consultation'>Brand & Design Insight</Link></Button>
+                <Button href='/web-development-consultation' className='mb-3 btn-lg button-mobile' variant='danger' >WEB CONSULTATION</Button>
         </div>
             
         

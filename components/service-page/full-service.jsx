@@ -50,10 +50,13 @@ const isDesktop = useMediaQuery({
       </div>
         <div className="d-flex flex-column align-items-start gap-1 pb-2">
           <h3 className="fw-bold fullServiceH3-mobile">{service2}</h3>
-          <p className="text-muted">{tagline}</p>
+          <p className="text-muted-tagline-mobile">{tagline}</p>
           <p className="lead-mobile">{description}</p>
-          <Button variant="outline-dark btn-lg" href="/web_development_consultation">Consultation</Button>
         </div>
+
+          <div className='d-grid py-3 px-3'>
+            <Button variant="danger btn-lg" href="/web-development-consultation">Consultation</Button>
+          </div>
 
         <div className='squeezer-mobile'>
           <div className="row scrollable-div-mobile ">

@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 function Service (props) {
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 424px)'
+        query: '(max-width: 700px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'

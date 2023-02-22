@@ -28,7 +28,7 @@ const AboutPage = ()=>{
         <div>
             
             {(isMobile) && 
-            <section>
+            <section className="pt-5">
                 <div className="x-pad">
                     <Subheader 
                     title={"About Us"} 

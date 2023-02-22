@@ -2,7 +2,6 @@ import Service from "../../components/service-page/service";
 import Subheader from "../../components/SubheaderComponents/Subheader";
 import serviceData from "../../data/service-data";
 import { useMediaQuery } from 'react-responsive';
-import styles from "./index.module.css";
 import subheaderData from "../../data/subheader";
 
 
@@ -10,7 +9,7 @@ function Services() {
     const [{title:titles,slogan:slogans,tagline:taglines}]= subheaderData;
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 424px)'
+        query: '(max-width: 600px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'
@@ -26,8 +25,8 @@ function Services() {
         
         <div>
             {isMobile && 
-                <section>
-                        <div className='xpad' >
+                <section className="pt-5">
+                        <div className='' >
                             <Subheader key={0} title={titles} slogan={slogans} tagline={taglines}/>
                             <div className='ypad-mobile'>
                             {serviceData.map((service) => (
