@@ -24,7 +24,7 @@ function MainNavigation () {
         <div>
             {isMobile && 
             <div>
-        <Navbar collapseOnSelect expand="" variant='dark' className='header-mobile' >
+        <Navbar fixed="top" collapseOnSelect expand="" bg='dark' variant='dark' className='header-mobile' >
             <Container>
                 <Navbar.Brand href='/'><Logo/></Navbar.Brand>
                 <Navbar.Toggle id="responsive-navbar-nav" />

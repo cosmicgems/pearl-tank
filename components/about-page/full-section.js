@@ -45,7 +45,7 @@ const FullSection = (props) => {
       <div className="squeezer-mobile">
           <div className="row  scrollable-div scrollable-div-mobile">
           {values.map((feature) => 
-          (    <div className="d-flex flex-column gap-2 features-mobile">
+          (    <div key={feature.name} className="d-flex flex-column gap-2 features-mobile">
                 <div className="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3 ">
                   <img src={feature.icon} className="bi img-fluid" width="50em" height="50em" alt="feature_icon" />
                 </div>
@@ -83,7 +83,7 @@ const FullSection = (props) => {
       <div className="row row-cols-1 row-cols-sm-2 g-4 scrollable-div">
         {values.map((feature) => (
 
-              <div className="d-flex flex-column gap-2">
+              <div key={feature.name} className="d-flex flex-column gap-2">
               <div
                 className="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
                 <img src={feature.icon} className="bi" width="50em" height="50em" alt="feature_icon" />

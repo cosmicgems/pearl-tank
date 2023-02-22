@@ -42,7 +42,7 @@ export default function FeaturedServices(){
               <div className="row featurette">
                 <div className="col-md-7 order-md-2">
                 <div className="py-5"><h2 className="featurette-heading">Digital Resumes. <span className="text-muted-mobile">Market yourself... To the WORLD!</span></h2>
-                  <p className="lead pb-4 featurette-lead-mobile">You've done all of that incredible work of learning and mastering your skill-set, why not put those accomplishments on display for the world to see and get results. </p>
+                  <p className="lead pb-4 featurette-lead-mobile">You`&#39;`ve done all of that incredible work of learning and mastering your skill-set, why not put those accomplishments on display for the world to see and get results. </p>
                   <Link className="" href='/'><Button className="featurette-button-mobile" variant=' btn-lg  '>Digital Resumes</Button></Link></div>
                   
                 </div>

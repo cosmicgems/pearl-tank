@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Col, Row } from "react-bootstrap";
 import {BsFacebook, BsInstagram, BsSnapchat} from "react-icons/bs";
 import { useMediaQuery } from "react-responsive";
@@ -122,13 +123,13 @@ export default function AtGlance(){
 
                     <p className="mt-4 mb-3">COVER LETTER</p>
                     <p className="cover-letter mb-2">
-                        Hello my name is Maliek Davis. I'm a <span className="span-cv">Technical Project Manager</span> from Detroit, Michigan.
+                        Hello my name is Maliek Davis. I`m a <span className="span-cv">Technical Project Manager</span> from Detroit, Michigan.
                     </p>
                     <p className="cover-letter mb-4">
                         10+ years of experience in a project management role on projects with international stakeholders, mainly in the automotive and technology sector. I find joy in working with colleagues of varying disciplines - from warehouse staff to directors of varying experience; working toward toward the same goal within our individual disciplines.
                     </p>
                     <p className="cover-letter mb-2">
-                        If you'd like to learn about me, and my worth ethic feel free to explore my page. I developed it myself! 
+                        If you`'`d like to learn about me, and my worth ethic feel free to explore my page. I developed it myself! 
                     </p>
                     <p className="cover-letter mb-2">
                         Thanks a lot for visiting.

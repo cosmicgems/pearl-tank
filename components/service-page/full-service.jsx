@@ -58,7 +58,7 @@ const isDesktop = useMediaQuery({
         <div className='squeezer-mobile'>
           <div className="row scrollable-div-mobile ">
             {features.map((feature) => ( 
-            <div className="d-flex flex-column features-mobile gap-2">
+            <div key={feature.name} className="d-flex flex-column features-mobile gap-2">
                 <div className="feature-icon-small d-inline-flex align-items-center justify-content-center  bg-gradient fs-4 rounded-3">
                   <img src={feature.icon} className="bi" width="50em" height="50em" alt="feature_icon" />
                 </div>

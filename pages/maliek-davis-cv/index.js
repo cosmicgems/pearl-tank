@@ -36,7 +36,7 @@ export default function Resume(){
                     <div className="welcome-clear ">
                         <div className=" welcome-mobile-div py-4 px-3">
                             <h1 className="welcome-mobile-h1 ">
-                                Hello World I'm Maliek.
+                                Hello World I`&#39;`m Maliek.
                             </h1>
                             <p className="welcome-p-mobile mb-5">
                                 Technical Project Manager

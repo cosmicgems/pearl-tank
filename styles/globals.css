@@ -54,7 +54,7 @@ body {
   --size-40: 10rem;
 
   margin: 0;
-  background-color: black;
+  background-color: #181818;
   color: #252525;
   font-family: 'Roboto', sans-serif;
 }
@@ -491,10 +491,6 @@ backdrop-filter: blur( 12.5px );
   justify-content: space-between;
   align-items: center;
   padding: 0.5% 2%;
-}
-.header-mobile{
-background: rgba( 255, 255, 255, 0.0525 );
-backdrop-filter: blur( 12.5px );
 }
 .link-mobile{
   color: #DA1212;

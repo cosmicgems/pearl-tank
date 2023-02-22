@@ -26,7 +26,7 @@ export default function Collaborations(){
             <Row className="mb-3">
                 <Col>
                     <h1 className="collaborations-h1-mobile">COLLABORATIONS</h1>
-                    <p className="collaborations-p-mobile">WE'VE DONE WORK TOGETHER.</p>
+                    <p className="collaborations-p-mobile">WE`&#39;`VE DONE WORK TOGETHER.</p>
                 </Col>
             </Row>
                     <Row className="pl-5" >

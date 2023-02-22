@@ -69,14 +69,14 @@ export default function FieldExpert(){
                             </Col>
                             <Col>
                                 <p className="work-date">
-                                    Feb 18' - Mar 19'
+                                    Feb 18`&#39;` - Mar 19`&#39;`
                                 </p>
                             </Col>
                         </Row>
                     </Col>
                 </Row>
                 <Row className="mb-4">
-                    <p className="mb-2">DAQRI was an American augmented reality company headquarted in Los Angelos, CA. The company's primary product was an augmented reality wearable technology product, DAQRI Smart Glasses, designed for the industrial industry.</p>
+                    <p className="mb-2">DAQRI was an American augmented reality company headquarted in Los Angelos, CA. The company`&#39;`s primary product was an augmented reality wearable technology product, DAQRI Smart Glasses, designed for the industrial industry.</p>
                     <ul className="skills-bullets-mobile pl-5">
                         <li> Developed and implemented a change management process resulting in increased change propagation</li>
                         <li>Led cross-functional team of 9 through design to launch of over 25 software product features</li>
@@ -96,14 +96,14 @@ export default function FieldExpert(){
                             </Col>
                             <Col>
                                 <p className="work-date">
-                                    Aug 12' - Jan 18'
+                                    Aug 12`&#39;` - Jan 18`&#39;`
                                 </p>
                             </Col>
                         </Row>
                     </Col>
                 </Row>
                 <Row>
-                    <p className="mb-2">DAQRI was an American augmented reality company headquarted in Los Angelos, CA. The company's primary product was an augmented reality wearable technology product, DAQRI Smart Glasses, designed for the industrial industry.</p>
+                    <p className="mb-2">DAQRI was an American augmented reality company headquarted in Los Angelos, CA. The company`&#39;`s primary product was an augmented reality wearable technology product, DAQRI Smart Glasses, designed for the industrial industry.</p>
                     <ul className="skills-bullets-mobile pl-5">
                         <li>Developed engineering change process</li>
                         <li>Championed project throughout lifecycle</li>

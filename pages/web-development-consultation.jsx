@@ -1549,7 +1549,7 @@ if (requestStatus === 'error') {
                             style={{ height: '100px' }}
                           />
                         </FloatingLabel>
-                        <p className={classes.form}>Please provide 3 examples of websites you like, and describe why. (Doesn't have to be the same industry.)</p>
+                        <p className={classes.form}>Please provide 3 examples of websites you like, and describe why. (Doesn`t have to be the same industry.)</p>
                         <FloatingLabel className='mb-3' controlId="floatingTextarea2" label="">
                           <Form.Control
                             onChange={cq24} name='q24' value={q24} id='q24'
@@ -1558,7 +1558,7 @@ if (requestStatus === 'error') {
                             style={{ height: '100px' }}
                           />
                         </FloatingLabel>
-                        <p className={classes.form}>What 3 words best portray your company's image?</p>
+                        <p className={classes.form}>What 3 words best portray your company`s image?</p>
                         <FloatingLabel className='mb-3' controlId="floatingTextarea2" label="">
                           <Form.Control
                             onChange={cq25} name='q25' value={q25} id='q25'

@@ -22,7 +22,7 @@ export default function Available(){
         <div>
             {isMobile &&  <div className="available px-3 py-5">
                 <h1 className="available-mobile-h1 mb-4">
-                    I'm currently available for a new challenging project.
+                    I`&#39;`m currently available for a new challenging project.
                 </h1>
                 <ContactForm />
             </div>}
