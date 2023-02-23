@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 function Hero(){
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 424px)'
+        query: '(max-width: 1024px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'
@@ -35,7 +35,7 @@ function Hero(){
         </h2>
         <div className=" d-grid  py-4 px-2 ">
             
-                <Button href='/web-development-consultation' className='mb-3 btn-lg button-mobile' variant='danger' >WEB CONSULTATION</Button>
+                <Button href='/web-development-consultation' className='mb-3 btn-lg button-mobile' variant='custom' >WEB CONSULTATION</Button>
         </div>
             
         

@@ -20,7 +20,7 @@ export default function Stripes(){
     return(
         
       <div>
-        {isMobile && <div className="stripes-mobile px-3">
+        {isMobile && <div className="stripes-mobile ">
         <Row>
           <Col>
                         <h1 className="stripes-mobile-h1">

@@ -12,7 +12,7 @@ import Image from 'next/image';
 function FullService(props) {
 
   const isMobile = useMediaQuery({
-    query: '(max-width: 424px)'
+    query: '(max-width: 1024px)'
 })
 const isTablet = useMediaQuery({
     query: '(min-width: 767px)'

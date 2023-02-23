@@ -9,7 +9,7 @@ function Services() {
     const [{title:titles,slogan:slogans,tagline:taglines}]= subheaderData;
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 600px)'
+        query: '(max-width: 1024px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'

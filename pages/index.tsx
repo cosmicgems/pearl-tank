@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 function HomePage(props: { posts: any; }) {
   const isMobile = useMediaQuery({
-      query: '(max-width: 700px)'
+      query: '(max-width: 1025px)'
   })
 
   const isTablet = useMediaQuery({

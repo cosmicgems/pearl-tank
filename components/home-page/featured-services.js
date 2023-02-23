@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive"
@@ -5,7 +6,7 @@ import { useMediaQuery } from "react-responsive"
 export default function FeaturedServices(){
 
   const isMobile = useMediaQuery({
-      query: '(max-width: 424px)'
+      query: '(max-width: 1025px)'
   })
   const isTablet = useMediaQuery({
       query: '(min-width: 767px)'
@@ -35,7 +36,9 @@ export default function FeaturedServices(){
                   </div>
                 </div>
                 <div className="col-md-5">
-                  <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                  <div>
+                    <Image className="landing-pages" width={500} height={500} src='/images/site/landing-pages.png' alt="landing_page_examples_on_floating_background" />
+                  </div>
 
                 </div>
               </div>
@@ -54,7 +57,9 @@ export default function FeaturedServices(){
                   
                 </div>
                 <div className="col-md-5 order-md-1 pb-5 mb-4">
-                  <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                  <div>
+                    <Image className="landing-pages" width={500} height={500} src='/images/site/landing-pages.png' alt="landing_page_examples_on_floating_background" />
+                  </div>
 
                 </div>
               </div>

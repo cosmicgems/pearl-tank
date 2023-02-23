@@ -18,9 +18,9 @@ export default function Header(){
 
     return(
 
-      <div>
-        {isMobile && <div>
-        <Navbar collapseOnSelect expand="" variant='dark'  bg='danger' >
+      <div className="">
+        {isMobile && <div className="mt-3 pt-5">
+        <Navbar className="" collapseOnSelect expand="" variant='dark'  bg='danger' >
           <Container>
             <Navbar.Brand>Maliek Davis</Navbar.Brand>
             <Navbar.Toggle id="responsive-navbar-nav" />

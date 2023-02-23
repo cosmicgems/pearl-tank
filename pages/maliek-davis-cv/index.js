@@ -10,7 +10,7 @@ import Skills from "./skills";
 
 export default function Resume(){
     const isMobile = useMediaQuery({
-        query: '(max-width: 3400px)'
+        query: '(max-width: 1025px)'
     })
 
     const isTablet = useMediaQuery({
@@ -28,13 +28,14 @@ export default function Resume(){
     return(
         <div>
             {isMobile && <div>
-                <Header />
-                <div className="">
-                <video autoPlay muted loop className="video" >
+                <video autoPlay muted loop className="video p-0 m-0" >
                     <source src="/images/site/fluid.mp4" />
                 </video>
-                    <div className="welcome-clear ">
-                        <div className=" welcome-mobile-div py-4 px-3">
+                <div className="">
+                
+                <Header />
+                    <div className="welcome-clear container-fluid">
+                        <div className=" welcome-mobile-div py-4 ">
                             <h1 className="welcome-mobile-h1 ">
                                 Hello World I`&#39;`m Maliek.
                             </h1>
