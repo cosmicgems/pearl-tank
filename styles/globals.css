@@ -1029,9 +1029,6 @@ border-radius: 10px;
   -webkit-filter: invert(1);
   filter: invert(1);
 }
-.btn-custom{
-  background-color: rgb(218, 18, 18);
-}
 .landing-pages{
   box-shadow: 10px 8px 32px 0 rgba(33, 1, 1, 0.85);
   border-radius: 10px;

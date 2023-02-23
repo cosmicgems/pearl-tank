@@ -35,7 +35,7 @@ function Hero(){
         </h2>
         <div className=" d-grid  py-4 px-2 ">
             
-                <Button href='/web-development-consultation' className='mb-3 btn-lg button-mobile' variant='custom' >WEB CONSULTATION</Button>
+                <Button href='/web-development-consultation' className='mb-3 btn-lg p-3'  variant='light' >WEB CONSULTATION</Button>
         </div>
             
         
