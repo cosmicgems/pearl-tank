@@ -50,7 +50,7 @@ export default function FeaturedServices(){
                 <div className="py-5"><h2 className="featurette-heading">Digital Resumes. <span className="text-muted-mobile">Market yourself... To the WORLD!</span></h2>
                   <p className="lead pb-4 featurette-lead-mobile">You&#39;ve done all of that incredible work of learning and mastering your skill-set, why not put those accomplishments on display for the world to see and get results. </p>
                   <div className="d-grid px-2">
-                    <Button href="/web-development-consultation" className="btn-lg" variant='light'>Digital Resumes</Button>
+                    <Button href="/maliek-davis-cv" className="btn-lg" variant='light'>Digital Resumes</Button>
                   </div>
                   
                   </div>

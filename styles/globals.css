@@ -998,10 +998,12 @@ border-radius: 10px;
 }
 .footer-section{
   background-color: #EEEEEE;
-  min-height: 17vh;
+}
+.center-footer{
+  padding: 0 0 0 25vw;
 }
 .footer-social{
-  padding: 0 25vw;
+  padding: 0 32vw;
 }
 .green-gem{
   color: #DA1212;
