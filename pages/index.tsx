@@ -27,7 +27,7 @@ function HomePage(props: { posts: any; }) {
       {isMobile && 
       <div className="mb-0 pb-0 pt-5">
         <div className="mb-0 pb-0">
-                <video autoPlay muted loop className="video" >
+                <video autoPlay muted loop className="video" playsInline={true} >
                     <source src="/images/site/fluid.mp4" />
                 </video>
                     <div className="cosmic-welcome-clear-mobile">
