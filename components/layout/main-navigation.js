@@ -31,12 +31,12 @@ function MainNavigation () {
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="me-auto">
                         <p className='cosmic-nav-p-mobile'>COSMIC GEMS REALITY</p>
-                        <Nav.Link className='link-mobile' eventKey='1' to='/'> Home </Nav.Link>
-                        <Nav.Link className='link-mobile' eventKey='2' to='/our-services'> Services </Nav.Link>
-                        {/* <Link className='link-mobile' eventKey='3' to='/portfolio'> Portfolio </Nav.Link> */}
-                        <Nav.Link className='link-mobile' eventKey='4' to='/about'> About </Nav.Link>
-                        <Nav.Link className='link-mobile' eventKey='5' to='/contact'> Contact </Nav.Link>
-                        {/* <Nav.Link className='link-mobile' eventKey='6' to='/blog'> Blog </Nav.Link> */}
+                        <Nav.Link className='link-mobile' eventKey='1' href='/'> Home </Nav.Link>
+                        <Nav.Link className='link-mobile' eventKey='2' href='/our-services'> Services </Nav.Link>
+                        {/* <Link className='link-mobile' eventKey='3' href='/portfolio'> Portfolio </Nav.Link> */}
+                        <Nav.Link className='link-mobile' eventKey='4' href='/about'> About </Nav.Link>
+                        <Nav.Link className='link-mobile' eventKey='5' href='/contact'> Contact </Nav.Link>
+                        {/* <Nav.Link className='link-mobile' eventKey='6' href='/blog'> Blog </Nav.Link> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
