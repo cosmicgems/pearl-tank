@@ -30,32 +30,36 @@ export default function Stripes(){
         </Row>
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 px-4">
       <div class="col">
-        <div class="card   h-100 overflow-hidden  rounded-4 shadow-lg" >
-        <Row className="pt-5">
-        <Col></Col>
-          <Col>
-            <Image className="expertise-pic" width={100} height={200} src='/images/site/planning.png' alt='project_management_icon' />
-          </Col>
-          <Col></Col>
-        </Row>
-          <div class="d-flex flex-column h-100 px-5 pb-4 text-white text-shadow-1">
-            <h3 class="pt-5  mb-4 display-6 lh-1 fw-bold superpower-h3-mobile">Project Management</h3>
-            <ul className="stripes-bullets-mobile">
-              <li>Effective Communication</li>
-              <li>Negotiation</li>
-              <li>Time Management</li>
-              <li>Leadership</li>
-              <li>Technical Expertise</li>
-              <li>Risk Management</li>
-              <li>Critical Thinking & Problem Solving</li>
-            </ul>
-          </div>
+        <div class=" overflow-hidden  rounded-4 shadow-lg" >
+        <div className="bg-card">
+          <Row className="pt-5">
+                  <Col></Col>
+                    <Col>
+                      <Image className="expertise-pic" width={100} height={200} src='/images/site/planning.png' alt='project_management_icon' />
+                    </Col>
+                    <Col></Col>
+                  </Row>
+                    <div class="d-flex flex-column h-100 px-5 pb-4 text-white text-shadow-1">
+                      <h3 class="pt-5  mb-4 display-6 lh-1 fw-bold superpower-h3-mobile">Project Management</h3>
+                      <ul className="stripes-bullets-mobile">
+                        <li>Effective Communication</li>
+                        <li>Negotiation</li>
+                        <li>Time Management</li>
+                        <li>Leadership</li>
+                        <li>Technical Expertise</li>
+                        <li>Risk Management</li>
+                        <li>Critical Thinking & Problem Solving</li>
+                      </ul>
+                    </div>
+        </div>
+        
         </div>
       </div>
 
       <div class="col">
-        <div class="card card-mobile card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-        <Row className="pt-5">
+        <div class="  overflow-hidden rounded-4 shadow-lg">
+        <div className="bg-card">
+          <Row className="pt-5">
         <Col></Col>
           <Col>
             <Image className="expertise-pic" width={100} height={200} src='/images/site/hands.png' alt='project_management_icon' />
@@ -75,32 +79,37 @@ export default function Stripes(){
             
           </div>
         </div>
+        
+        </div>
       </div>
 
       <div class="col">
-        <div class="card card-mobile card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-        <Row className="pt-5">
-        <Col></Col>
-          <Col>
-            <Image className="expertise-pic" width={100} height={200} src='/images/site/thinking.png' alt='project_management_icon' />
-          </Col>
-          <Col></Col>
-        </Row>
-          <div class="d-flex flex-column h-100 px-5 pb-4 text-shadow-1">
-            <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold superpower-h3-mobile">Relationship Management</h3>
-            <ul className="stripes-bullets-mobile">
-              <li>Industry Awareness</li>
-              <li>Adoptability & Resourcefulness</li>
-              <li>Ability to develop and maintain strong and successful working relationships</li>
-              <li>Numeracy Skills</li>
-              <li>Communication</li>
-            </ul>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
+        <div class=" overflow-hidden rounded-4 shadow-lg">
+        <div className="bg-card">
+          <Row className="pt-5">
+                  <Col></Col>
+                    <Col>
+                      <Image className="expertise-pic" width={100} height={200} src='/images/site/thinking.png' alt='project_management_icon' />
+                    </Col>
+                    <Col></Col>
+                  </Row>
+                    <div class="d-flex flex-column h-100 px-5 pb-4 text-shadow-1">
+                      <h3 class="pt-5 mb-4 display-6 lh-1 fw-bold superpower-h3-mobile">Relationship Management</h3>
+                      <ul className="stripes-bullets-mobile">
+                        <li>Industry Awareness</li>
+                        <li>Adoptability & Resourcefulness</li>
+                        <li>Ability to develop and maintain strong and successful working relationships</li>
+                        <li>Numeracy Skills</li>
+                        <li>Communication</li>
+                      </ul>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+        </div>
+        
         </div>
       </div>
 </div>
