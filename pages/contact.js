@@ -32,7 +32,9 @@ function ContactPage() {
                     </Head>
                     <div className="x-pad">
                         <Subheader title={"Contact"} slogan={"Your Cosmic Gem is just a click away"} tagline={"Connect. Plan. Manifest."} />
+                        <div className="ypad-mobile">
                         <ContactForm />
+                        </div>
                     </div>
                 </div>
             
