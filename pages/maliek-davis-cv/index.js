@@ -28,7 +28,7 @@ export default function Resume(){
     return(
         <div>
             {isMobile && <div>
-                <video autoPlay muted loop className="video p-0 m-0" >
+                <video autoPlay muted loop className="video"  playsInline={true} >
                     <source src="/images/site/fluid.mp4" />
                 </video>
                 <div className="">
