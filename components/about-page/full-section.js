@@ -45,7 +45,7 @@ const FullSection = (props) => {
           
       <div className="d-flex flex-column align-items-start gap-1  pb-2">
         <h1 className="fw-bold fullServiceH3-mobile">{name}</h1>
-        <p className="text-muted">{tagline}</p>
+        <p className="text-muted-tagline-mobile">{tagline}</p>
         <p className="lead-mobile">{description}</p>
       </div>
 
