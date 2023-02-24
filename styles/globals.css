@@ -955,7 +955,10 @@ ul.skills-bullets-mobile{
   padding: 25% 7%;
 }
 .cosmic-welcome-clear-mobile{
-  padding: 6vh 7%;
+  padding: 6vh 7% ;
+}
+.cosmic-welcome-clear-mobile2{
+  padding:  2vh 7% ;
 }
 
 .welcome-mobile-div{

@@ -23,17 +23,20 @@ const Subheader = (props) => {
 
         <div className=' '>
         {isMobile && 
-        <div className="pt-5 px-4 pb-2 mt-3 ">
-            <div className="subheader-logo bi mb-3 pt-3">
-                <Image className="img-fluid " height={600} width={600} src='/images/site/cosmic-logo.png' alt="logo"  />
-            </div>
-            <div className="px-3 pt-4">
-<h1 className='mobilesubheaderh1'>{props.title}</h1>
-            <h4 className='mobilesubheaderh4'>{props.slogan}</h4> 
-            <h4 className='mobilesubheaderp'>{props.tagline}</h4>
-            </div>
-            
+        <div className="pt-5 mt-3 cosmic-welcome-clear-mobile2 text-center ">
+            <div className="py-4 cosmic-welcome-div-mobile ">
+                        <div className="subheader-logo bi mb-3 pt-3">
+                            <Image className="img-fluid " height={600} width={600} src='/images/site/cosmic-logo.png' alt="logo"  />
+                        </div>
+                        <div className="px-3 pt-4">
+            <h1 className='mobilesubheaderh1'>{props.title}</h1>
+                        <h4 className='mobilesubheaderh4'>{props.slogan}</h4> 
+                        <h4 className='mobilesubheaderp'>{props.tagline}</h4>
+                        </div>
+                        
+                    </div>
         </div>
+        
         }
         </div>
  /* 
