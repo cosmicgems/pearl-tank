@@ -4,6 +4,8 @@ import { coreValues } from "../../data/about-data";
 import { useMediaQuery } from 'react-responsive'
 import { FaRegEye } from "react-icons/fa";
 import { SlPlus, SlClose } from "react-icons/sl";
+import { Col, Row } from "react-bootstrap";
+import Image from "next/image";
 
 const FullSection = (props) => {
 
@@ -27,23 +29,28 @@ const FullSection = (props) => {
       <div>
                     
         {(isMobile) && <div className="py-3 fullServiceDiv-mobile service-shadow">
-          <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-1 pb-4">
           <div className="col-lg-12 close-button">
             <div className='col-lg-1'>
               <SlClose size={35} className="close-button"  onClick={()=>{props.onClicked2()}}/>
             </div>
           </div>
-    <div className="col-12  mobile-full-icon pb-2">
-      <img width='100'  className="img-fluid service-icons-mobile" src="images/site/core-values.png" alt="user_interface"/>
-      </div>
+          <div className="row row-cols-1  align-items-md-center g-1  ">          
+          <Row xs={3}>
+            <Col xs={4}></Col>
+            <Col ><div className='my-4'>
+            <Image className='service-logo-mobile' src="/images/site/core-values.png" width={200} height={200} alt="user_interface" />
+          </div></Col>
+            <Col></Col>
+          </Row>
+          
       <div className="d-flex flex-column align-items-start gap-1  pb-2">
         <h1 className="fw-bold fullServiceH3-mobile">{name}</h1>
         <p className="text-muted">{tagline}</p>
         <p className="lead-mobile">{description}</p>
       </div>
 
-      <div className="squeezer-mobile">
-          <div className="row  scrollable-div scrollable-div-mobile">
+      <div className="">
+          <div className="row   scrollable-div-mobile">
           {values.map((feature) => 
           (    <div key={feature.name} className="d-flex flex-column gap-2 features-mobile">
                 <div className="feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3 ">

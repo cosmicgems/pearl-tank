@@ -1,6 +1,7 @@
 import React from  "react";
 import { useMediaQuery } from 'react-responsive'
 import { FaGem } from "react-icons/fa";
+import { Col, Row } from "react-bootstrap";
 
 const MissState = (props)=>{
 
@@ -22,7 +23,16 @@ const MissState = (props)=>{
         <div>
             
             {isMobile && <div className="denseServiceDiv-mobile mb-4">
-            <FaGem className="green-gem" />
+
+            <div className="my-2">
+            <Row xs={3}>
+                <Col xs={5}></Col>
+                <Col className="ml-4"><FaGem className="green-gem" /></Col>
+                <Col></Col>
+            </Row>
+            </div>
+            
+            
             <h1 className="denseServiceH1-mobile mb-3">
                 {props.name} 
             </h1>

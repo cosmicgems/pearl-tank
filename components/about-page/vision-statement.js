@@ -1,6 +1,7 @@
 import React from  "react";
 import { useMediaQuery } from 'react-responsive'
 import { FaRegEye } from "react-icons/fa";
+import { Col, Row } from "react-bootstrap";
 
 const VisionState = (props)=>{
 
@@ -23,7 +24,15 @@ const VisionState = (props)=>{
 
                     
             {(isMobile) && <div className="denseServiceDiv-mobile mb-4">
-            <FaRegEye className="blue-eye" />
+
+<div className="my-2">
+<Row xs={3}>
+    <Col xs={5}></Col>
+    <Col className="ml-4"><FaRegEye className="blue-eye" /></Col>
+    <Col></Col>
+</Row>
+</div>
+            
             <h1 className="denseServiceH1-mobile mb-3">
                 {props.name}
             </h1>
