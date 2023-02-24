@@ -25,7 +25,7 @@ function Layout(props){
                 <Fragment>
                     <MainNavigation />
                     <div className="">
-                        <video autoPlay muted loop className="video" >
+                        <video autoPlay muted loop className="video" playsInline={true} >
                             <source src="/images/site/fluid.mp4" />
                         </video>
                     </div>
