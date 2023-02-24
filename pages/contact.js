@@ -30,7 +30,7 @@ function ContactPage() {
                         <title>Contact Me</title>
                         <meta name='description' content="the way you contact us."  />
                     </Head>
-                    <div className="ypad-mobile">
+                    <div className="x-pad">
                         <Subheader title={"Contact"} slogan={"Your Cosmic Gem is just a click away"} tagline={"Connect. Plan. Manifest."} />
                         <ContactForm />
                     </div>
