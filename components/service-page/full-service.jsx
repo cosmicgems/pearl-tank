@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Button } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import serviceData from "../../data/service-data";
 import {  SlClose } from "react-icons/sl";
 import { FaGem } from "react-icons/fa";
@@ -39,15 +39,23 @@ const isDesktop = useMediaQuery({
         {(isMobile) && 
 
         <div className=" py-3 fullServiceDiv-mobile  service-shadow">
-        <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-1  pb-4">
-          <div className="col-lg-12 close-button">
+        <div className="col-lg-12 close-button">
             <div className='col-lg-1'>
               <SlClose size={35} className="close-button"  onClick={()=>{props.onClicked2()}}/>
             </div>
           </div>
-    <div className="col-12  mobile-full-icon pb-2">
-      <img width='100'  className="img-fluid service-icons-mobile" src="images/site/core-values.png" alt="user_interface"/>
-      </div>
+        <div className="row row-cols-1  align-items-md-center g-1  ">
+          
+
+          <Row xs={3}>
+            <Col xs={4}></Col>
+            <Col ><div className='my-4'>
+            <Image className='service-logo-mobile' src="/images/site/core-values.png" width={200} height={200} alt="user_interface" />
+          </div></Col>
+            <Col></Col>
+          </Row>
+          
+   
         <div className="d-flex flex-column align-items-start gap-1 pb-2">
           <h3 className="fw-bold fullServiceH3-mobile">{service2}</h3>
           <p className="text-muted-tagline-mobile">{tagline}</p>
@@ -55,10 +63,10 @@ const isDesktop = useMediaQuery({
         </div>
 
           <div className='d-grid py-3 px-3'>
-            <Button variant="danger btn-lg" href="/web-development-consultation">Consultation</Button>
+            <Button className='btn-lg' variant="light" href="/web-development-consultation">Consultation</Button>
           </div>
 
-        <div className='squeezer-mobile'>
+        <div className=''>
           <div className="row scrollable-div-mobile ">
             {features.map((feature) => ( 
             <div key={feature.name} className="d-flex flex-column features-mobile gap-2">

@@ -159,7 +159,7 @@ backdrop-filter: blur( 12.5px );
       
   margin: 3vh 0;
   border-radius: 10px;
-  padding: 16px;
+  padding: 5vh 0;
 position: relative;
 overflow: hidden;
 background: rgba( 218, 18, 18, 0.855 );
@@ -314,6 +314,10 @@ backdrop-filter: blur( 12.5px );
 }
 
 .bi{
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+.service-logo-mobile{
   -webkit-filter: invert(1);
   filter: invert(1);
 }
@@ -999,8 +1003,11 @@ border-radius: 10px;
 .footer-section{
   background-color: #EEEEEE;
 }
+.align-center{
+  text-align: center;
+}
 .center-footer{
-  padding: 0 0 0 25vw;
+  padding: 0 17.5%;
 }
 .footer-social{
   padding: 0 32vw;

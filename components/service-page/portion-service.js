@@ -23,7 +23,7 @@ function PortionService(props) {
         <div>
             {isMobile && 
             <div>
-                <div className='denseServiceDiv-expandable-mobile' >
+                <div className='denseServiceDiv-expandable-mobile ' >
                     <h1 className='denseServiceH1-mobile'>{service}</h1>
                 </div>
             </div>
