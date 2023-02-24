@@ -26,8 +26,8 @@ function Hero(){
         <h1 className="heroH1Mobile py-3">
             COSMIC GEMS REALITY
         </h1>
-        <div className='imageMobile'>
-            <Image src="/images/site/cosmic-logo.png" alt="" width={300} height={200} />
+        <div className='imageMobile px-5'>
+            <Image src="/images/site/cosmic-logo.png" alt="" width={150} height={150} />
         
         </div>
         <h2>

@@ -7,7 +7,7 @@ import styles from '../service-page/service-page.module.css';
 const Subheader = (props) => {
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 10244px)'
+        query: '(max-width: 431px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'
