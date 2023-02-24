@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 export default function Stripes(){
 
   const isMobile = useMediaQuery({
-      query: '(max-width: 424px)'
+      query: '(max-width: 1024px)'
   })
   const isTablet = useMediaQuery({
       query: '(min-width: 767px)'
@@ -28,7 +28,7 @@ export default function Stripes(){
                         </h1>
           </Col>
         </Row>
-                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 px-4">
       <div class="col">
         <div class="card card-mobile card-cover h-100 overflow-hidden  rounded-4 shadow-lg" >
         <Row className="pt-5">

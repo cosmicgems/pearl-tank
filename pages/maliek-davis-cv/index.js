@@ -33,17 +33,17 @@ export default function Resume(){
                 </video>
                 <div className="">
                 
-                <Header />
+                {/* <Header /> */}
                     <div className="welcome-clear container-fluid">
-                        <div className=" welcome-mobile-div py-4 ">
+                        <div className=" welcome-mobile-div py-4 text-center">
                             <h1 className="welcome-mobile-h1 ">
-                                Hello World I`&#39;`m Maliek.
+                                Hello World I&#39;m Maliek.
                             </h1>
                             <p className="welcome-p-mobile mb-5">
                                 Technical Project Manager
                             </p>
-                            <div className="px-5">
-                                <Image className="hero-img" width={200} height={200} src='/images/site/hero7.png' alt="head_shot" />
+                            <div className="px-5 mx-4">
+                                <Image className="hero-img pl-5" width={200} height={200} src='/images/site/hero7.png' alt="head_shot" />
                             </div>
                         </div>
                     </div>

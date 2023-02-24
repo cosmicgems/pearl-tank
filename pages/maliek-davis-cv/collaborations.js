@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 export default function Collaborations(){
     const isMobile = useMediaQuery({
-        query: '(max-width: 3400px)'
+        query: '(max-width: 1024px)'
     })
 
     const isTablet = useMediaQuery({

@@ -94,7 +94,7 @@ if (requestStatus === 'error') {
 }
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 424px)'
+        query: '(max-width: 1024px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'
@@ -129,9 +129,11 @@ if (requestStatus === 'error') {
                     </FloatingLabel>
                 
                     
-                    <div className='d-grid  actions'>
-                    <button className="btn btn-lg btn-danger">Send Message</button>
-                </div>
+                    
+        <div className=" d-grid  py-4 px-2 ">
+            
+            <Button href='/web-development-consultation' className='mb-3 btn-lg p-3'  variant='light' >Let&#39;s Talk!</Button>
+    </div>
                 </Form>
             { notification && <Notification 
             status={notification.status} 

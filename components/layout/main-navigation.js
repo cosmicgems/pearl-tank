@@ -36,7 +36,7 @@ function MainNavigation () {
                         {/* <Link className='link-mobile' href='/portfolio'> Portfolio </Link> */}
                         <Link className='link-mobile' href='/about'> About </Link>
                         <Link className='link-mobile' href='/contact'> Contact </Link>
-                        <Link className='link-mobile' href='/blog'> Blog </Link>
+                        {/* <Link className='link-mobile' href='/blog'> Blog </Link> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

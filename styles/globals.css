@@ -621,8 +621,14 @@ filter: invert(1);
 .top-form{
   background-color: #11468F;
 }
-.top-form-mobile{
-  background-color: #DA1212;
+.top-form-mobile{  margin: 3vh 0 0;
+  border-start-end-radius: 10px;
+  padding: 5vh 0;
+position: relative;
+overflow: hidden;
+background: rgba( 218, 18, 18, 0.855 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4 );
+backdrop-filter: blur( 12.5px );
 }
 .modal-content{
   background-color: #EEEEEE;
@@ -956,6 +962,7 @@ ul.skills-bullets-mobile{
   background: rgba( 255, 255, 255, 0.1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 12.5px );
+border-radius: 10px;
 }
 .cosmic-welcome-div-mobile{
   background: rgba( 255, 255, 255, 0.1 );
