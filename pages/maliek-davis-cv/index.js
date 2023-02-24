@@ -33,7 +33,7 @@ export default function Resume(){
                 </video>
                 <div className="">
                 
-                {/* <Header /> */}
+                
                     <div className="welcome-clear container-fluid">
                         <div className=" welcome-mobile-div py-4 text-center">
                             <h1 className="welcome-mobile-h1 ">

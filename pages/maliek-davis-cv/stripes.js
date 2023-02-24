@@ -30,7 +30,7 @@ export default function Stripes(){
         </Row>
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 px-4">
       <div class="col">
-        <div class="card card-mobile card-cover h-100 overflow-hidden  rounded-4 shadow-lg" >
+        <div class="card   h-100 overflow-hidden  rounded-4 shadow-lg" >
         <Row className="pt-5">
         <Col></Col>
           <Col>
