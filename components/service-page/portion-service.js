@@ -1,5 +1,4 @@
 import { useMediaQuery } from 'react-responsive';
-import styles from './service-page.module.css';
 
 function PortionService(props) {
 

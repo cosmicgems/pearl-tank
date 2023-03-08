@@ -25,7 +25,7 @@ function Services() {
         
         <div>
         {isMobile && 
-            <section className="pt-5">
+            <section >
                     <div className='' >
                     <div style={{paddingInline: "7vw"}}>
                         <Subheader key={0} title={titles} slogan={slogans} tagline={taglines}/>
@@ -41,9 +41,9 @@ function Services() {
         }
         
         {isTablet && !isLaptop && 
-                <section className="pt-5">
+                <section className="">
                         <div className='' >
-                        <div style={{paddingInline: "21vw", paddingBlockEnd: '5vh', paddingBlockStart: '2.5vh'}}>
+                        <div >
                             <Subheader key={0} title={titles} slogan={slogans} tagline={taglines}/>
                         </div>
                             <div style={{paddingInline: '14vw'}}>
@@ -59,7 +59,7 @@ function Services() {
             {isLaptop && 
                 <section className="">
                         <div className='' >
-                        <div style={{paddingInline: '25vw'}}>
+                        <div >
                             <Subheader key={0} title={titles} slogan={slogans} tagline={taglines}/>
                         </div>
                             <div style={{paddingInline: '14vw', paddingBlock: '5vh'}}>

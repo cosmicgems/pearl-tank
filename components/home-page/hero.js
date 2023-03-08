@@ -72,19 +72,17 @@ function Hero(){
         <h1 className="heroH1Mobile py-3">
             COSMIC GEMS REALITY
         </h1>
-        <div className='image px-5'>
+        <div className='image '>
             <Image src="/images/site/cosmic-logo.png" alt="" width={150} height={150} />
         
         </div>
         <h2>
             Digital Business & Branding Gems That Inspire
         </h2>
-        <div className=" d-grid  py-4 px-2 ">
-            
-                <Button href='/web-development-consultation' className='mb-3 btn-lg p-3'  variant='light' >WEB CONSULTATION</Button>
+        <div className=" d-grid  py-4" style={{paddingInline: '21vw'}}>
+                <Button href='/web-development-consultation' className='mb-3 btn-lg p-3 hero-btn-laptop'  variant='light' > WEB CONSULTATION </Button>
         </div>
             
-        
         
     </section>
             </div>

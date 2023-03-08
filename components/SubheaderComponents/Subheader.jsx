@@ -24,8 +24,8 @@ const Subheader = (props) => {
         <div className=' '>
         {isMobile && 
         <div className="pt-5 mt-3 cosmic-welcome-clear-mobile2 text-center ">
-            <div className="py-4 cosmic-welcome-div-mobile ">
-                        <div className="subheader-logo bi mb-3 pt-3">
+            <div className="py-4 cosmic-welcome-div-mobile " >
+                        <div className=" bi " style={{paddingInline: '20vw'}}>
                             <Image className="img-fluid " height={600} width={600} src='/images/site/cosmic-logo.png' alt="logo"  />
                         </div>
                         <div className="px-3 pt-4">
@@ -42,7 +42,7 @@ const Subheader = (props) => {
         {isTablet && !isLaptop && 
         <div className="pt-5 mt-3  text-center ">
             <div className="py-4 cosmic-welcome-div-mobile ">
-                        <div className="bi" style={{paddingInline: '12vw'}}>
+                        <div className="bi" style={{paddingInline: '40vw'}}>
                             <Image className="img-fluid " height={600} width={600} src='/images/site/cosmic-logo.png' alt="logo"  />
                         </div>
                         <div className="px-3 pt-4">
@@ -58,9 +58,9 @@ const Subheader = (props) => {
 
         
         {isLaptop && 
-        <div className="pt-5 mt-3 text-center ">
+        <div className="  text-center ">
             <div className="py-4 cosmic-welcome-div-mobile ">
-                        <div className="bi" style={{paddingInline: '12vw'}}>
+                        <div className="bi" style={{paddingInline: '40vw'}}>
                             <Image className="img-fluid " height={600} width={600} src='/images/site/cosmic-logo.png' alt="logo"  />
                         </div>
                         <div className="px-3 pt-4">

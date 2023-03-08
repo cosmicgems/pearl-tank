@@ -14,7 +14,7 @@ function HomePage(props: { posts: any; }) {
   })
 
   const isLaptop = useMediaQuery({
-      query: '(min-width: 1000px)'
+      query: '(min-width: 1200px)'
   })
 
   const isDesktop = useMediaQuery({
@@ -57,7 +57,7 @@ function HomePage(props: { posts: any; }) {
     </div>
     }
     {isLaptop  && 
-    <div className="mb-0 pb-0 pt-5">
+    <div className="mb-0 pb-0 ">
       <div className="mb-0 pb-0">
               <video autoPlay muted loop className="video" playsInline={true} >
                   <source src="/images/site/fluid.mp4" />
