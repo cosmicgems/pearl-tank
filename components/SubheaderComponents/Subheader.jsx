@@ -7,13 +7,13 @@ import styles from '../service-page/service-page.module.css';
 const Subheader = (props) => {
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 431px)'
+        query: '(max-width: 445px)'
     })
     const isTablet = useMediaQuery({
-        query: '(min-width: 767px)'
+        query: '(min-width: 446px)'
     })
     const isLaptop = useMediaQuery({
-        query: '(min-width: 1366px)'
+        query: '(min-width: 1200px)'
     })
     const isDesktop = useMediaQuery({
         query: '(min-width: 1920px)'
@@ -32,6 +32,41 @@ const Subheader = (props) => {
             <h1 className='mobilesubheaderh1'>{props.title}</h1>
                         <h4 className='mobilesubheaderh4'>{props.slogan}</h4> 
                         <h4 className='mobilesubheaderp'>{props.tagline}</h4>
+                        </div>
+                        
+                    </div>
+        </div>
+        
+        }
+        
+        {isTablet && !isLaptop && 
+        <div className="pt-5 mt-3  text-center ">
+            <div className="py-4 cosmic-welcome-div-mobile ">
+                        <div className="bi" style={{paddingInline: '12vw'}}>
+                            <Image className="img-fluid " height={600} width={600} src='/images/site/cosmic-logo.png' alt="logo"  />
+                        </div>
+                        <div className="px-3 pt-4">
+            <h1 className='mobilesubheaderh1-tablet'>{props.title}</h1>
+                        <h4 className='mobilesubheaderh4-tablet'>{props.slogan}</h4> 
+                        <h4 className='mobilesubheaderp-tablet'>{props.tagline}</h4>
+                        </div>
+                        
+                    </div>
+        </div>
+        
+        }
+
+        
+        {isLaptop && 
+        <div className="pt-5 mt-3 text-center ">
+            <div className="py-4 cosmic-welcome-div-mobile ">
+                        <div className="bi" style={{paddingInline: '12vw'}}>
+                            <Image className="img-fluid " height={600} width={600} src='/images/site/cosmic-logo.png' alt="logo"  />
+                        </div>
+                        <div className="px-3 pt-4">
+            <h1 className='mobilesubheaderh1-laptop'>{props.title}</h1>
+                        <h4 className='mobilesubheaderh4-laptop'>{props.slogan}</h4> 
+                        <h4 className='mobilesubheaderp-laptop'>{props.tagline}</h4>
                         </div>
                         
                     </div>

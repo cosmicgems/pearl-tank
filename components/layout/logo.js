@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 function Logo(){
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 1024px)'
+        query: '(max-width: 431px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'
@@ -20,7 +20,17 @@ function Logo(){
 
     return (
         <div>
-            {isMobile &&
+        {isMobile &&
+        <div>
+            <Image className='image-header ' src="/images/site/cosmic-logo.png" alt="" width={75} height={10} />
+        </div>
+        }
+            {isTablet && !isLaptop &&
+            <div>
+                <Image className='image-header ' src="/images/site/cosmic-logo.png" alt="" width={75} height={10} />
+            </div>
+            }
+            {isLaptop &&
             <div>
                 <Image className='image-header ' src="/images/site/cosmic-logo.png" alt="" width={75} height={10} />
             </div>

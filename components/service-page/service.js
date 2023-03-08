@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 function Service (props) {
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 1024px)'
+        query: '(max-width: 431px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'
@@ -40,22 +40,33 @@ function Service (props) {
     }
     return (
         <div>
-            {isMobile && 
+        {isMobile && 
+        <div className="px-0">
+        <div onClick={() => { onClicked();}}>
+            {(click)? <FullService onClicked2={()=>{onClose(props.key)}} content={show} service={props.name} tagline={props.tagline} description={props.description} button={props.form} /> : <PortionService  service={props.name} /> }
+        </div>
+        </div>
+        }
+            {isTablet && !isLaptop &&
             <div className="px-0">
             <div onClick={() => { onClicked();}}>
                 {(click)? <FullService onClicked2={()=>{onClose(props.key)}} content={show} service={props.name} tagline={props.tagline} description={props.description} button={props.form} /> : <PortionService  service={props.name} /> }
             </div>
             </div>
             }
+
+            {isLaptop && 
+                <div onClick={() => {
+                    onClicked();
+                }}>
+                    {(click)? <FullService onClicked2={()=>{onClose(props.key)}} content={show} service={props.name} tagline={props.tagline} description={props.description} button={props.form} /> : <PortionService  service={props.name} /> }
+                </div>
+            }
         </div>
 
 
 
-        // <div onClick={() => {
-        //     onClicked();
-        // }}>
-        //     {(click)? <FullService onClicked2={()=>{onClose(props.key)}} content={show} service={props.name} tagline={props.tagline} description={props.description} button={props.form} /> : <PortionService  service={props.name} /> }
-        // </div>
+        
 
 
 

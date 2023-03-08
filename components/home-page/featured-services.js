@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive"
 export default function FeaturedServices(){
 
   const isMobile = useMediaQuery({
-      query: '(max-width: 1025px)'
+      query: '(max-width: 434px)'
   })
   const isTablet = useMediaQuery({
       query: '(min-width: 767px)'
@@ -20,7 +20,55 @@ export default function FeaturedServices(){
 
     return(
       <div className="m-0 p-0">
-        {isMobile &&
+      {isMobile &&
+      
+      <div className="featurette-section-mobile ">
+        <div className="featured-service-squeeze-mobile">
+                    <div className="row featurette">
+              <div className="col-md-7">
+                <div className="py-5">
+                  <h2 className="featurette-heading">Landing Pages. <span className="text-muted-mobile">Beautiful. Creative. Purposeful.</span></h2>
+                  <p className="lead pb-4  featurette-lead-mobile">Build it and they will come. Well, kind of. With the help of our beautifully designed landing pages, you`re sure to see a surge of traffic.</p>
+                  <div className="d-grid px-2">
+                    <Button href="/web-development-consultation" className="btn-lg" variant='light'>Landing Pages</Button>
+                  </div>
+                  
+                </div>
+              </div>
+              <div className="col-md-5">
+                <div>
+                  <Image className="landing-pages" width={500} height={500} src='/images/site/landing-pages.png' alt="landing_page_examples_on_floating_background" />
+                </div>
+
+              </div>
+            </div>
+
+            <hr className="featurette-divider" />
+
+            <div className="row featurette">
+              <div className="col-md-7 order-md-2">
+              <div className="py-5"><h2 className="featurette-heading">Digital Resumes. <span className="text-muted-mobile">Market yourself... To the WORLD!</span></h2>
+                <p className="lead pb-4 featurette-lead-mobile">You&#39;ve done all of that incredible work of learning and mastering your skill-set, why not put those accomplishments on display for the world to see and get results. </p>
+                <div className="d-grid px-2">
+                  <Button href="/maliek-davis-cv" className="btn-lg" variant='light'>Digital Resumes</Button>
+                </div>
+                
+                </div>
+                
+              </div>
+              <div className="col-md-5 order-md-1 pb-5 mb-4">
+                <div>
+                  <Image className="landing-pages" width={500} height={500} src='/images/site/landing-pages.png' alt="landing_page_examples_on_floating_background" />
+                </div>
+
+              </div>
+            </div>
+                </div>
+      </div>
+        
+      
+      }
+        {isTablet && !isLaptop &&
         
         <div className="featurette-section-mobile ">
           <div className="featured-service-squeeze-mobile">
@@ -36,7 +84,7 @@ export default function FeaturedServices(){
                   </div>
                 </div>
                 <div className="col-md-5">
-                  <div>
+                  <div className="py-5">
                     <Image className="landing-pages" width={500} height={500} src='/images/site/landing-pages.png' alt="landing_page_examples_on_floating_background" />
                   </div>
 
@@ -57,7 +105,55 @@ export default function FeaturedServices(){
                   
                 </div>
                 <div className="col-md-5 order-md-1 pb-5 mb-4">
-                  <div>
+                  <div className="py-5">
+                    <Image className="landing-pages" width={500} height={500} src='/images/site/landing-pages.png' alt="landing_page_examples_on_floating_background" />
+                  </div>
+
+                </div>
+              </div>
+                  </div>
+        </div>
+          
+        
+        }
+        {isLaptop &&
+        
+        <div className="featurette-section-mobile ">
+          <div className="featured-service-squeeze-mobile">
+                      <div className="row featurette">
+                <div className="col-md-7">
+                  <div className="py-5">
+                    <h2 className="featurette-heading">Landing Pages. <span className="text-muted-mobile">Beautiful. Creative. Purposeful.</span></h2>
+                    <p className="lead pb-4  featurette-lead-mobile">Build it and they will come. Well, kind of. With the help of our beautifully designed landing pages, you`re sure to see a surge of traffic.</p>
+                    <div className="d-grid px-2">
+                      <Button href="/web-development-consultation" className="btn-lg" variant='light'>Landing Pages</Button>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div className="col-md-5">
+                  <div className="mt-5">
+                    <Image className="landing-pages" width={500} height={500} src='/images/site/landing-pages.png' alt="landing_page_examples_on_floating_background" />
+                  </div>
+
+                </div>
+              </div>
+
+              <hr className="featurette-divider" />
+
+              <div className="row featurette">
+                <div className="col-md-7 order-md-2">
+                <div className="py-5"><h2 className="featurette-heading">Digital Resumes. <span className="text-muted-mobile">Market yourself... To the WORLD!</span></h2>
+                  <p className="lead pb-4 featurette-lead-mobile">You&#39;ve done all of that incredible work of learning and mastering your skill-set, why not put those accomplishments on display for the world to see and get results. </p>
+                  <div className="d-grid px-2">
+                    <Button href="/maliek-davis-cv" className="btn-lg" variant='light'>Digital Resumes</Button>
+                  </div>
+                  
+                  </div>
+                  
+                </div>
+                <div className="col-md-5 order-md-1 pb-5 mb-4">
+                  <div className="mt-5">
                     <Image className="landing-pages" width={500} height={500} src='/images/site/landing-pages.png' alt="landing_page_examples_on_floating_background" />
                   </div>
 

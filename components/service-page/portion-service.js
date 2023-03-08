@@ -4,7 +4,7 @@ import styles from './service-page.module.css';
 function PortionService(props) {
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 1024px)'
+        query: '(max-width: 431px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'
@@ -21,20 +21,30 @@ function PortionService(props) {
     return (
 
         <div>
-            {isMobile && 
+        {isMobile && 
+        <div>
+            <div className='denseServiceDiv-expandable-mobile ' >
+                <h1 className='denseServiceH1-mobile'>{service}</h1>
+            </div>
+        </div>
+        }
+            {isTablet && !isLaptop &&
             <div>
-                <div className='denseServiceDiv-expandable-mobile ' >
-                    <h1 className='denseServiceH1-mobile'>{service}</h1>
+                <div className='denseServiceDiv-expandable-tablet ' >
+                    <h1 className='denseServiceH1-tablet'>{service}</h1>
+                </div>
+            </div>
+            }
+            {isLaptop && 
+            <div>
+                <div className='denseServiceDiv-expandable-laptop ' >
+                    <h1 className='denseServiceH1-laptop'>{service}</h1>
                 </div>
             </div>
             }
         </div>
 
-        
-// <div className='denseServiceDiv' >
-// <h1 className='denseServiceH1'>{service}</h1>
-// </div>
-
+  
 
    )
 }

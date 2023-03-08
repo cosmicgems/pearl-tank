@@ -24,7 +24,6 @@ function MyApp({ Component, pageProps}) {
 </style>
             </Head>
             <Component {...pageProps} />
-            <Footer />
         </Layout>
         </main>
         

@@ -81,55 +81,51 @@ const isDesktop = useMediaQuery({
         </div>
     </div>
       </div>}
+
+        {isLaptop &&
+          <div className="px-4 pb-5 fullServiceDiv mb-3 service-shadow">
+          <div className=' pt-3 pb-5 row justify-content-end'>
+     <div className='col-lg-1'>
+     <SlClose size={35} className="close-button"  onClick={()=>{props.onClicked2(props.key)}}/>
+     </div>
+</div>
+<div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-2 pb-5">
+
+      <div className="d-flex flex-column align-items-start gap-5 ">
+      <div className=''>
+        <h3 className="fw-bold fullServiceH3 ">{service2}</h3>
+        <p className="text-muted2">{tagline}</p>
+        <p  className="fullServiceP">{description}</p>
+      </div>
+        
+        
+      <div className='d-grid py-3 ' style={{width: '32.25vw'}}>
+            <Button className='btn-lg' variant="light" href="/web-development-consultation">Consultation</Button>
+          </div>
+      </div>
+      <div className="row row-cols-1 row-cols-sm-2 g-4 scrollable-div service-shadow py-2">
+        {features.map((feature, i) => (
+
+              <div key={i} className="d-flex flex-column gap-2 ">
+                <div
+                className="feature-icon-small d-inline-flex align-items-center justify-content-center  bg-gradient fs-4 rounded-3">
+
+                <img src={feature.icon} className="bi" width="50em" height="50em" alt="feature_icon" />
+              </div>
+              
+              <h4 className="fw-semibold mb-0 feat-name text-muted2 ">{feature.name}</h4>
+              <p className="lead">{feature.description}</p>
+            </div>
+
+        ))}
+      </div>
+    </div>
+      </div>
+
+        }
       </div>
 
 
-
-//   <div className="col-lg-12 close-button-mobile pb-4 pt-2">
-    
-//     </div>
-
-//          {(isDesktopOrLaptop) && 
-         
-//           <div className="px-4 pb-5 fullServiceDiv mb-3 service-shadow">
-//           <div className=' pt-3 pb-5 row justify-content-end'>
-//      <div className='col-lg-1'>
-//      <SlClose size={35} className="close-button"  onClick={()=>{props.onClicked2(props.key)}}/>
-//       {/* <img src='/images/site/close.png' alt='close' /> */}
-//      </div>
-// </div>
-// <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-2 pb-5">
-
-//       <div className="d-flex flex-column align-items-start gap-5 ">
-//       <div className=''>
-//         <h3 className="fw-bold fullServiceH3 -3">{service2}</h3>
-//         <p className="text-muted2">{tagline}</p>
-//         <p  className="lead ">{description}</p>
-//       </div>
-        
-//         <Button variant="outline-dark btn-lg" href="/web_development_consultation">Consultation</Button>
-//       </div>
-//       <div className="row row-cols-1 row-cols-sm-2 g-4 scrollable-div service-shadow py-2">
-//         {features.map((feature) => (
-
-//               <div className="d-flex flex-column gap-2 ">
-//                 <div
-//                 className="feature-icon-small d-inline-flex align-items-center justify-content-center  bg-gradient fs-4 rounded-3">
-
-//                 <img src={feature.icon} className="bi" width="50em" height="50em" alt="feature_icon" />
-//               </div>
-              
-//               <h4 className="fw-semibold mb-0 feat-name text-muted2 ">{feature.name}</h4>
-//               <p className="lead">{feature.description}</p>
-//             </div>
-
-//         ))}
-//       </div>
-//     </div>
-//       </div>} 
-//       </div>
-
-      
 
    )
 }

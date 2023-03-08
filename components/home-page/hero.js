@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 function Hero(){
 
     const isMobile = useMediaQuery({
-        query: '(max-width: 1024px)'
+        query: '(max-width: 431px)'
     })
     const isTablet = useMediaQuery({
         query: '(min-width: 767px)'
@@ -20,13 +20,59 @@ function Hero(){
 
     return (
         <div>
-            {isMobile &&
+        {isMobile &&
+        <div className=''>
+        <section className='heroMobile '>
+    <h1 className="heroH1Mobile py-3">
+        COSMIC GEMS REALITY
+    </h1>
+    <div className='imageMobile px-5'>
+        <Image src="/images/site/cosmic-logo.png" alt="" width={150} height={150} />
+    
+    </div>
+    <h2>
+        Digital Business & Branding Gems That Inspire
+    </h2>
+    <div className=" d-grid  py-4 px-2 ">
+        
+            <Button href='/web-development-consultation' className='mb-3 btn-lg p-3'  variant='light' >WEB CONSULTATION</Button>
+    </div>
+        
+    
+    
+</section>
+        </div>
+        }
+            {isTablet && !isLaptop &&
             <div className=''>
-            <section className='heroMobile '>
+            <section className='heroTablet '>
+        <h1 className="heroH1Tablet py-3">
+            COSMIC GEMS REALITY
+        </h1>
+        <div className='imageTablet px-5'>
+            <Image src="/images/site/cosmic-logo.png" alt="" width={150} height={150} />
+        
+        </div>
+        <h2>
+            Digital Business & Branding Gems That Inspire
+        </h2>
+        <div className=" d-grid  py-4 px-2 ">
+            
+                <Button href='/web-development-consultation' className='mb-3 btn-lg p-3'  variant='light' >WEB CONSULTATION</Button>
+        </div>
+            
+        
+        
+    </section>
+            </div>
+            }
+            {isLaptop &&
+            <div className=''>
+            <section className='hero '>
         <h1 className="heroH1Mobile py-3">
             COSMIC GEMS REALITY
         </h1>
-        <div className='imageMobile px-5'>
+        <div className='image px-5'>
             <Image src="/images/site/cosmic-logo.png" alt="" width={150} height={150} />
         
         </div>

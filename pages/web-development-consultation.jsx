@@ -41,7 +41,7 @@ function WDCPage () {
       query: '(min-width: 767px)'
   })
   const isLaptop = useMediaQuery({
-      query: '(min-width: 1366px)'
+      query: '(min-width: 1362px)'
   })
   const isDesktop = useMediaQuery({
       query: '(min-width: 1920px)'
@@ -431,10 +431,10 @@ if (requestStatus === 'error') {
               <Form className='form' onSubmit={sendWebDevFormHandler}>
 
               <h3 className='py-3 denseServiceH1-mobile'>Web Design Consultation</h3>
-              <div className='px-4 '>
-              <div className="modal-content-mobile-mobile form-squeezer-mobile">
+              <div className='px-0'>
+              <div className="form-squeezer-mobile">
               <div className="py-3 " role="document">
-                  <div className="rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">You</h1>
                     <hr className="py-1" />
 
@@ -489,7 +489,7 @@ if (requestStatus === 'error') {
 
               {/* Company */}
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow ">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow ">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">Company</h1>
                     <hr className="py-1" />
 
@@ -655,7 +655,7 @@ if (requestStatus === 'error') {
 
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">New Website Goals.</h1>
                     <hr className="py-1" />
 
@@ -769,7 +769,7 @@ if (requestStatus === 'error') {
                 {/* Content  */}
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">Content.</h1>
                     <hr className="py-1" />
 
@@ -832,7 +832,7 @@ if (requestStatus === 'error') {
 
                         
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">Design.</h1>
                     <hr className="py-1" />
 
@@ -876,7 +876,7 @@ if (requestStatus === 'error') {
 
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">SEO.</h1>
                     <hr className="py-1" />
 
@@ -941,7 +941,7 @@ if (requestStatus === 'error') {
               {/* Social Media  */}
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">Social Media.</h1>
                     <hr className="py-1" />
 
@@ -976,7 +976,7 @@ if (requestStatus === 'error') {
                 {/* Technical  */}
                 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">Technical.</h1>
                     <hr className="py-1" />
 
@@ -1032,7 +1032,7 @@ if (requestStatus === 'error') {
 
                 {/* Mainetenance  */}
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">Maintenance.</h1>
                     <hr className="py-1" />
 
@@ -1085,7 +1085,7 @@ if (requestStatus === 'error') {
                 </div>
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile-mobile rounded-4 shadow">
                     <h1 className=" mb-0 fs-5 section-label-web-mobile">Project Management.</h1>
                     <hr className="py-1" />
 
@@ -1146,13 +1146,13 @@ if (requestStatus === 'error') {
         {isLaptop &&
           <Fragment>
             <div>
-              <Form onSubmit={Submit}>
+              <Form className='form'  onSubmit={sendWebDevFormHandler}>
 
-              <h3 className='form-h3'>Web Design Consultation</h3>
+              <h3 className='denseServiceH1 pt-5'>Web Design Consultation</h3>
               <div className='px-5 '>
-              <div className="form-squeezer">
-              <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+              <div className="form-squeezer-out">
+              <div className="py-4" role="document">
+                  <div className="modal-content-mobile rounded-4 form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">You</h1>
                     <hr className="py-1" />
 
@@ -1207,7 +1207,7 @@ if (requestStatus === 'error') {
 
               {/* Company */}
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow ">
+                  <div className="modal-content-mobile rounded-4 shadow  form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">Company</h1>
                     <hr className="py-1" />
 
@@ -1357,7 +1357,7 @@ if (requestStatus === 'error') {
 
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile rounded-4 shadow form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">New Website Goals.</h1>
                     <hr className="py-1" />
 
@@ -1471,7 +1471,7 @@ if (requestStatus === 'error') {
                 {/* Content  */}
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile rounded-4 shadow form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">Content.</h1>
                     <hr className="py-1" />
 
@@ -1534,7 +1534,7 @@ if (requestStatus === 'error') {
 
                         
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile rounded-4 shadow form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">Design.</h1>
                     <hr className="py-1" />
 
@@ -1578,7 +1578,7 @@ if (requestStatus === 'error') {
 
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile rounded-4 shadow form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">SEO.</h1>
                     <hr className="py-1" />
 
@@ -1643,7 +1643,7 @@ if (requestStatus === 'error') {
               {/* Social Media  */}
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile rounded-4 shadow form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">Social Media.</h1>
                     <hr className="py-1" />
 
@@ -1678,7 +1678,7 @@ if (requestStatus === 'error') {
                 {/* Technical  */}
                 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile rounded-4 shadow form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">Technical.</h1>
                     <hr className="py-1" />
 
@@ -1734,7 +1734,7 @@ if (requestStatus === 'error') {
 
                 {/* Mainetenance  */}
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile rounded-4 shadow form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">Maintenance.</h1>
                     <hr className="py-1" />
 
@@ -1787,7 +1787,7 @@ if (requestStatus === 'error') {
                 </div>
 
                 <div className="py-3" role="document">
-                  <div className="modal-content-mobile rounded-4 shadow">
+                  <div className="modal-content-mobile rounded-4 shadow form-squeezer">
                     <h1 className=" mb-0 fs-5 section-label-web">Project Management.</h1>
                     <hr className="py-1" />
 
@@ -1828,7 +1828,7 @@ if (requestStatus === 'error') {
                     </Row>
                   </div>
                 </div>
-                <div className='container-fluid btnSub'>
+                <div className='d-grid btnSub'>
                 <Button type='submit' variant='outline-success' className='buttonSubmit m-3'>Submit</Button>
                 </div>
 

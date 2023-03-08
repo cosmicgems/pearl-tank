@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 function HomePage(props: { posts: any; }) {
   const isMobile = useMediaQuery({
-      query: '(max-width: 1025px)'
+      query: '(max-width: 431px)'
   })
 
   const isTablet = useMediaQuery({
@@ -14,7 +14,7 @@ function HomePage(props: { posts: any; }) {
   })
 
   const isLaptop = useMediaQuery({
-      query: '(min-width: 1366px)'
+      query: '(min-width: 1000px)'
   })
 
   const isDesktop = useMediaQuery({
@@ -24,22 +24,54 @@ function HomePage(props: { posts: any; }) {
 
   return (
     <Fragment>
-      {isMobile && 
-      <div className="mb-0 pb-0 pt-5">
-        <div className="mb-0 pb-0">
-                <video autoPlay muted loop className="video" playsInline={true} >
-                    <source src="/images/site/fluid.mp4" />
-                </video>
-                    <div className="cosmic-welcome-clear-mobile">
-                        <div className=" cosmic-welcome-div-mobile ">
-                            <Hero />
-                        </div>
-                    </div>
-                    
+    {isMobile  && 
+    <div className="mb-0 pb-0 pt-5">
+      <div className="mb-0 pb-0">
+              <video autoPlay muted loop className="video" playsInline={true} >
+                  <source src="/images/site/fluid.mp4" />
+              </video>
+                  <div className="cosmic-welcome-clear-mobile">
+                      <div className=" cosmic-welcome-div-mobile ">
+                          <Hero />
+                      </div>
+                  </div>
+                  
 
-                </div>
-      </div>
-      }
+              </div>
+    </div>
+    }
+    {isTablet  && !isLaptop &&
+    <div className="mb-0 pb-0 pt-5">
+      <div className="mb-0 pb-0">
+              <video autoPlay muted loop className="video" playsInline={true} >
+                  <source src="/images/site/fluid.mp4" />
+              </video>
+                  <div className="cosmic-welcome-clear-mobile">
+                      <div className=" cosmic-welcome-div-mobile ">
+                          <Hero />
+                      </div>
+                  </div>
+                  
+
+              </div>
+    </div>
+    }
+    {isLaptop  && 
+    <div className="mb-0 pb-0 pt-5">
+      <div className="mb-0 pb-0">
+              <video autoPlay muted loop className="video" playsInline={true} >
+                  <source src="/images/site/fluid.mp4" />
+              </video>
+                  <div className="cosmic-welcome-clear-mobile">
+                      <div className=" cosmic-welcome-div">
+                          <Hero />
+                      </div>
+                  </div>
+                  
+
+              </div>
+    </div>
+    }
                 
       
       <FeaturedServices />
