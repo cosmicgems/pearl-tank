@@ -41,7 +41,7 @@ function WDCPage () {
       query: '(min-width: 767px)'
   })
   const isLaptop = useMediaQuery({
-      query: '(min-width: 1362px)'
+      query: '(min-width: 1200px)'
   })
   const isDesktop = useMediaQuery({
       query: '(min-width: 1920px)'
